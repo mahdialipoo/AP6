@@ -43,7 +43,6 @@ namespace q2
                 x.smokes = std::stoi(s3.substr(0, s3.find(',')));
                 x.area_q = std::stoi(s4.substr(0, s4.find(',')));
                 x.alkhol = std::stoi(s5);
-                std::cout << x.age << std::endl;
                 v.push_back(x);
             }
 
