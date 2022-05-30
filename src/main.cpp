@@ -1,27 +1,26 @@
 #include <iostream>
 #include <gtest/gtest.h>
 
-#include "q1.h"
+//#include "q1.h"
 //#include "q2.h"
 //#include "q3.h"
 //#include "q4.h"
 //******
 #include <cmath>
 #include <fstream>
-// using namespace q1;
+#include <regex>
+#include <vector>
 //*****
 int main(int argc, char **argv)
 {
-    if (1) // make false to run unit-tests
+    if (0) // make false to run unit-tests
     {
-        std::ifstream indata;
-        std::string p;
-        indata.open("lung_cancer.csv");
-        indata >> p;
-        indata >> p;
-        indata.close();
-        std::cout << p << std::endl;
-        // debug section
+        std::cout << 5 << "dsaa" << 45 << std::endl;
+        // auto v{q2::read_file("lung_cancer.csv")};
+        // std::cout << v[0].smokes << std::endl;
+        //   std::regex pattern(R"(\w+\s?,\w+\s?,\d+,\d+,\d+,\d+)");
+        //   std::cout << std::regex_match("Gregory ,Peck,43,30,3,8", pattern);
+        //     debug section
     }
     else
     {
