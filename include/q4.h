@@ -36,7 +36,6 @@ namespace q4
     {
         auto s{std::accumulate(sensors.begin(), sensors.end(), Sensor{{0.0, 0.0}, 0.0}, [](Sensor a, Sensor b)
                                {Sensor s{{(a.pos * a.accuracy + b.pos * b.accuracy)*(1/(a.accuracy + b.accuracy))}, a.accuracy + b.accuracy};
-                               //std::cout<<s.pos.x<<","<<s.pos.y<<std::endl;
         return s; })};
         Vector2D v{s.pos};
         return v;
